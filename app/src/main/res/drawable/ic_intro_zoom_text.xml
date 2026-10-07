@@ -1,0 +1,181 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Background Soft Glow Circle -->
+    <path
+        android:pathData="M120,12C60.35,12 12,60.35 12,120C12,179.65 60.35,228 120,228C179.65,228 228,179.65 228,120C228,60.35 179.65,12 120,12Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="120"
+                android:startY="12"
+                android:endX="120"
+                android:endY="228"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF0F5FF"/>
+                <item android:offset="1.0" android:color="#FFE0EAFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Decorative Soft Rings -->
+    <path
+        android:pathData="M120,28C69.19,28 28,69.19 28,120C28,170.81 69.19,212 120,212C170.81,212 212,170.81 212,120C212,69.19 170.81,28 120,28Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#99C7D2FE"
+        android:strokeAlpha="0.6"/>
+
+    <path
+        android:pathData="M120,44C78.03,44 44,78.03 44,120C44,161.97 78.03,196 120,196C161.97,196 196,161.97 196,120C196,78.03 161.97,44 120,44Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#66C7D2FE"
+        android:strokeAlpha="0.4"/>
+
+    <!-- Small letter 'A' card (Initial 100%) -->
+    <path
+        android:pathData="M38,88C38,80.27 44.27,74 52,74H80C87.73,74 94,80.27 94,88V136C94,143.73 87.73,150 80,150H52C44.27,150 38,143.73 38,136Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="66"
+                android:startY="74"
+                android:endX="66"
+                android:endY="150"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFFFF"/>
+                <item android:offset="1.0" android:color="#FFF1F5F9"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Card Border & Shadow -->
+    <path
+        android:pathData="M38,88C38,80.27 44.27,74 52,74H80C87.73,74 94,80.27 94,88V136C94,143.73 87.73,150 80,150H52C44.27,150 38,143.73 38,136Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#E2E8F0"/>
+
+    <!-- Small letter 'A' glyph -->
+    <path
+        android:pathData="M66,93L57,126H62L63.8,119.5H68.2L70,126H75L66,93ZM64.8,115.5L66,108.5L67.2,115.5H64.8Z"
+        android:fillColor="#64748B"/>
+
+    <!-- Small '100%' label badge under small card -->
+    <path
+        android:pathData="M48,132H84C86.2,132 88,133.8 88,136C88,138.2 86.2,140 84,140H48C45.8,140 44,138.2 44,136C44,133.8 45.8,132 48,132Z"
+        android:fillColor="#E2E8F0"/>
+
+    <!-- Dynamic Scaling Arrow / Wave from small to big -->
+    <path
+        android:pathData="M100,112C106,112 110,110 114,107M100,120C108,120 114,118 120,114M114,105L122,111L114,117"
+        android:strokeWidth="3.5"
+        android:strokeColor="#6366F1"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+
+    <!-- Large Letter 'A' Glowing Background Plate -->
+    <path
+        android:pathData="M112,62C112,50.95 120.95,42 132,42H188C199.05,42 208,50.95 208,62V158C208,169.05 199.05,178 188,178H132C120.95,178 112,169.05 112,158Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="160"
+                android:startY="42"
+                android:endX="160"
+                android:endY="178"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFFFF"/>
+                <item android:offset="1.0" android:color="#FFF8FAFC"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Large Card border with subtle indigo tint -->
+    <path
+        android:pathData="M112,62C112,50.95 120.95,42 132,42H188C199.05,42 208,50.95 208,62V158C208,169.05 199.05,178 188,178H132C120.95,178 112,169.05 112,158Z"
+        android:strokeWidth="2"
+        android:strokeColor="#CBD5E1"/>
+
+    <!-- GIANT BOLD LETTER 'A' (High Contrast, Gradient Gradient Purple/Blue) -->
+    <path
+        android:pathData="M160,58L132,152H147.5L153.2,132H166.8L172.5,152H188L160,58ZM156.4,118L160,94.5L163.6,118H156.4Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="132"
+                android:startY="58"
+                android:endX="188"
+                android:endY="152"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF4F46E5"/>
+                <item android:offset="0.5" android:color="#FF6366F1"/>
+                <item android:offset="1.0" android:color="#FF7C3AED"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- "+300%" Modern Badge at bottom right -->
+    <!-- Badge shadow / glow -->
+    <path
+        android:pathData="M142,172C142,164.27 148.27,158 156,158H206C213.73,158 220,164.27 220,172C220,179.73 213.73,186 206,186H156C148.27,186 142,179.73 142,172Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="142"
+                android:startY="158"
+                android:endX="220"
+                android:endY="186"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF59E0B"/>
+                <item android:offset="1.0" android:color="#FFD97706"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Badge Highlight Edge -->
+    <path
+        android:pathData="M143,172C143,164.82 148.82,159 156,159H206C213.18,159 219,164.82 219,172C219,179.18 213.18,185 206,185H156C148.82,185 143,179.18 143,172Z"
+        android:strokeWidth="1"
+        android:strokeColor="#FDE68A"/>
+
+    <!-- Badge Icon: Up Arrow & 300% text glyphs -->
+    <!-- Up Arrow '+' sign -->
+    <path
+        android:pathData="M153,172H161M157,168V176"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"/>
+    <!-- '3' '0' '0' '%' Vector shapes -->
+    <!-- 3 -->
+    <path
+        android:pathData="M166,168H172C173.1,168 174,168.9 174,170C174,170.8 173.4,171.5 172.6,171.8C173.5,172.1 174.2,172.9 174.2,173.9C174.2,175.1 173.2,176 172,176H166"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"/>
+    <!-- 0 -->
+    <path
+        android:pathData="M178,168H181C182.7,168 184,169.8 184,172V172C184,174.2 182.7,176 181,176H178C176.3,176 175,174.2 175,172V172C175,169.8 176.3,168 178,168Z"
+        android:strokeWidth="1.8"
+        android:strokeColor="#FFFFFF"/>
+    <!-- 0 -->
+    <path
+        android:pathData="M188,168H191C192.7,168 194,169.8 194,172V172C194,174.2 192.7,176 191,176H188C186.3,176 185,174.2 185,172V172C185,169.8 186.3,168 188,168Z"
+        android:strokeWidth="1.8"
+        android:strokeColor="#FFFFFF"/>
+    <!-- % -->
+    <path
+        android:pathData="M198,175L203,169M198.5,169.5H199M202.5,174.5H203"
+        android:strokeWidth="1.8"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"/>
+
+    <!-- Decorative Stars / Sparkles -->
+    <!-- Top-left sparkle -->
+    <path
+        android:pathData="M60,46C60,49.87 56.87,53 53,53C56.87,53 60,56.13 60,60C60,56.13 63.13,53 67,53C63.13,53 60,49.87 60,46Z"
+        android:fillColor="#FBBF24"/>
+    <!-- Top-right small star -->
+    <path
+        android:pathData="M196,30C196,33.31 193.31,36 190,36C193.31,36 196,38.69 196,42C196,38.69 198.69,36 202,36C198.69,36 196,33.31 196,30Z"
+        android:fillColor="#818CF8"/>
+    <!-- Bottom-left sparkle -->
+    <path
+        android:pathData="M40,175C40,177.21 38.21,179 36,179C38.21,179 40,180.79 40,183C40,180.79 41.79,179 44,179C41.79,179 40,177.21 40,175Z"
+        android:fillColor="#F59E0B"/>
+
+</vector>

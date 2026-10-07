@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="110dp"
+    android:height="110dp"
+    android:viewportWidth="110"
+    android:viewportHeight="110">
+
+    <!-- Solid Royal Blue Background (#1D4ED8) with Rounded Corners (Radius = 24) -->
+    <path
+        android:fillColor="#1D4ED8"
+        android:pathData="M24,0 h62 a24,24 0 0 1 24,24 v62 a24,24 0 0 1 -24,24 h-62 a24,24 0 0 1 -24,-24 v-62 a24,24 0 0 1 24,-24 z" />
+
+    <!-- Uppercase 'A' (Geometric Sans-Serif) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M38.5,32 L44.5,32 L60,78 L50.8,78 L47,67 L36,67 L32.2,78 L23,78 Z M41.5,41.5 L37.6,58.5 L45.4,58.5 Z" />
+
+    <!-- Lowercase 'a' (Geometric Sans-Serif, size contrast) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M73,52 C66.9,52 62,57.8 62,65 C62,72.2 66.9,78 73,78 C76.5,78 79.6,76.1 81.5,73.2 L81.5,78 L87,78 L87,53 L81.5,53 L81.5,56.8 C79.6,53.9 76.5,52 73,52 Z M73.5,57.5 C77.5,57.5 81,60.8 81,65 C81,69.2 77.5,72.5 73.5,72.5 C69.5,72.5 66.8,69.2 66.8,65 C66.8,60.8 69.5,57.5 73.5,57.5 Z" />
+</vector>

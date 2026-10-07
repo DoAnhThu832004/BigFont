@@ -1,0 +1,208 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Background Soft Glow Circle -->
+    <path
+        android:pathData="M120,12C60.35,12 12,60.35 12,120C12,179.65 60.35,228 120,228C179.65,228 228,179.65 228,120C228,60.35 179.65,12 120,12Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="120"
+                android:startY="12"
+                android:endX="120"
+                android:endY="228"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF5F3FF"/>
+                <item android:offset="1.0" android:color="#FFEDE9FE"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Decorative Soft Rings -->
+    <path
+        android:pathData="M120,28C69.19,28 28,69.19 28,120C28,170.81 69.19,212 120,212C170.81,212 212,170.81 212,120C212,69.19 170.81,28 120,28Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#DDD6FE"
+        android:strokeAlpha="0.6"/>
+
+    <!-- Central Preview Screen / Card -->
+    <!-- Card Shadow -->
+    <path
+        android:pathData="M44,48C44,39.16 51.16,32 60,32H180C188.84,32 196,39.16 196,48V154C196,162.84 188.84,170 180,170H60C51.16,170 44,162.84 44,154Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="120"
+                android:startY="32"
+                android:endX="120"
+                android:endY="170"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFFFF"/>
+                <item android:offset="1.0" android:color="#FFF8FAFC"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Card Border -->
+    <path
+        android:pathData="M44,48C44,39.16 51.16,32 60,32H180C188.84,32 196,39.16 196,48V154C196,162.84 188.84,170 180,170H60C51.16,170 44,162.84 44,154Z"
+        android:strokeWidth="1.8"
+        android:strokeColor="#CBD5E1"/>
+
+    <!-- Screen Header Bar -->
+    <path
+        android:pathData="M60,46H100"
+        android:strokeWidth="4"
+        android:strokeColor="#94A3B8"
+        android:strokeLineCap="round"/>
+
+    <!-- Live Preview Status Pill (green pulse dot + text line) -->
+    <path
+        android:pathData="M152,46C152,43.24 154.24,41 157,41H181C183.76,41 186,43.24 186,46C186,48.76 183.76,51 181,51H157C154.24,51 152,48.76 152,46Z"
+        android:fillColor="#DCFCE7"/>
+    <!-- Live Green Dot -->
+    <path
+        android:pathData="M159,46C159,44.9 159.9,44 161,44C162.1,44 163,44.9 163,46C163,47.1 162.1,48 161,48C159.9,48 159,47.1 159,46Z"
+        android:fillColor="#16A34A"/>
+    <!-- "LIVE" mini bar -->
+    <path
+        android:pathData="M168,46H179"
+        android:strokeWidth="2"
+        android:strokeColor="#16A34A"
+        android:strokeLineCap="round"/>
+
+    <!-- Inner Preview Window -->
+    <path
+        android:pathData="M56,62C56,58.69 58.69,56 62,56H178C181.31,56 184,58.69 184,62V124C184,127.31 181.31,130 178,130H62C58.69,130 56,127.31 56,124Z"
+        android:fillColor="#F1F5F9"/>
+
+    <!-- Realistic Big Font Preview Typography inside window -->
+    <!-- Large Headline Font Sample: "Aa" -->
+    <path
+        android:pathData="M72,74L64,98H68L69.6,93H74.4L76,98H80L72,74ZM70.4,90L72,83.5L73.6,90H70.4Z"
+        android:fillColor="#1E293B"/>
+    <path
+        android:pathData="M83,86C83,83 85,81 88,81C90.5,81 92,82.5 92,84.5V98H88.5V96.5C87.5,97.5 86.2,98 84.8,98C82.5,98 81,96.5 81,94.2C81,91.8 83,90.5 86.5,90.2L88.5,90V89C88.5,87.8 87.5,87 86.2,87C85,87 84.2,87.6 83.8,88.5L83,86ZM88.5,92.5L87,92.7C85.2,93 84.2,93.6 84.2,94.8C84.2,95.8 85,96.5 86.2,96.5C87.5,96.5 88.5,95.5 88.5,94.2V92.5Z"
+        android:fillColor="#1E293B"/>
+
+    <!-- Large text sample lines -->
+    <path
+        android:pathData="M102,78H168"
+        android:strokeWidth="5"
+        android:strokeColor="#334155"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M102,90H156"
+        android:strokeWidth="4"
+        android:strokeColor="#64748B"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M70,110H170"
+        android:strokeWidth="3.5"
+        android:strokeColor="#94A3B8"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M70,120H140"
+        android:strokeWidth="3"
+        android:strokeColor="#CBD5E1"
+        android:strokeLineCap="round"/>
+
+    <!-- Bottom Slider Control Container -->
+    <!-- Slider Track Background -->
+    <path
+        android:pathData="M56,150H184"
+        android:strokeWidth="8"
+        android:strokeColor="#E2E8F0"
+        android:strokeLineCap="round"/>
+
+    <!-- Active Track (from left to slider thumb) -->
+    <path
+        android:pathData="M56,150H132"
+        android:strokeWidth="8"
+        android:strokeColor="#7C3AED"
+        android:strokeLineCap="round"/>
+
+    <!-- Slider Thumb (Large, tactile knob with purple glow) -->
+    <path
+        android:pathData="M132,150C132,143.37 137.37,138 144,138C150.63,138 156,143.37 156,150C156,156.63 150.63,162 144,162C137.37,162 132,156.63 132,150Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="132"
+                android:startY="138"
+                android:endX="156"
+                android:endY="162"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF8B5CF6"/>
+                <item android:offset="1.0" android:color="#FF6D28D9"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Slider Thumb Border & Center Dot -->
+    <path
+        android:pathData="M132,150C132,143.37 137.37,138 144,138C150.63,138 156,143.37 156,150C156,156.63 150.63,162 144,162C137.37,162 132,156.63 132,150Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"/>
+    <path
+        android:pathData="M141.5,150C141.5,148.62 142.62,147.5 144,147.5C145.38,147.5 146.5,148.62 146.5,150C146.5,151.38 145.38,152.5 144,152.5C142.62,152.5 141.5,151.38 141.5,150Z"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Small 'A' and Big 'A' indicators beside slider -->
+    <path
+        android:pathData="M48,150M46,145L43,155H45L45.6,153H48.4L49,155H51L48,145Z"
+        android:fillColor="#94A3B8"/>
+    <path
+        android:pathData="M192,150M190,143L186,157H188.5L189.5,153.5H193.5L194.5,157H197L193,143Z"
+        android:fillColor="#6D28D9"/>
+
+    <!-- Floating "Lưu mẫu font" / Favorite Preset Badge (Bookmark / Heart badge at bottom right) -->
+    <!-- Badge Circle with Shadow -->
+    <path
+        android:pathData="M168,172C168,158.75 178.75,148 192,148C205.25,148 216,158.75 216,172C216,185.25 205.25,196 192,196C178.75,196 168,185.25 168,172Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="168"
+                android:startY="148"
+                android:endX="216"
+                android:endY="196"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF43F5E"/>
+                <item android:offset="1.0" android:color="#FFE11D48"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- White Border -->
+    <path
+        android:pathData="M168,172C168,158.75 178.75,148 192,148C205.25,148 216,158.75 216,172C216,185.25 205.25,196 192,196C178.75,196 168,185.25 168,172Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"/>
+    <!-- Heart / Bookmark Glyph -->
+    <path
+        android:pathData="M192,183L184.5,175.5C181.5,172.5 181.5,167.5 184.5,164.5C187.5,161.5 192.5,162 192,166C191.5,162 196.5,161.5 199.5,164.5C202.5,167.5 202.5,172.5 199.5,175.5L192,183Z"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Decorative Tuning Sliders / Checkmark icon badge top left -->
+    <path
+        android:pathData="M24,72C24,63.16 31.16,56 40,56C48.84,56 56,63.16 56,72C56,80.84 48.84,88 40,88C31.16,88 24,80.84 24,72Z"
+        android:fillColor="#EEF2FF"/>
+    <path
+        android:pathData="M24,72C24,63.16 31.16,56 40,56C48.84,56 56,63.16 56,72C56,80.84 48.84,88 40,88C31.16,88 24,80.84 24,72Z"
+        android:strokeWidth="2"
+        android:strokeColor="#C7D2FE"/>
+    <!-- Checkmark inside -->
+    <path
+        android:pathData="M34,72L38,76L46,67"
+        android:strokeWidth="2.5"
+        android:strokeColor="#4F46E5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+
+    <!-- Sparkles -->
+    <path
+        android:pathData="M206,42C206,45.31 203.31,48 200,48C203.31,48 206,50.69 206,54C206,50.69 208.69,48 212,48C208.69,48 206,45.31 206,42Z"
+        android:fillColor="#FBBF24"/>
+    <path
+        android:pathData="M48,188C48,190.2 46.2,192 44,192C46.2,192 48,193.8 48,196C48,193.8 49.8,192 52,192C49.8,192 48,190.2 48,188Z"
+        android:fillColor="#A78BFA"/>
+
+</vector>

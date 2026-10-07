@@ -1,0 +1,205 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Background Soft Glow Circle -->
+    <path
+        android:pathData="M120,12C60.35,12 12,60.35 12,120C12,179.65 60.35,228 120,228C179.65,228 228,179.65 228,120C228,60.35 179.65,12 120,12Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="120"
+                android:startY="12"
+                android:endX="120"
+                android:endY="228"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF0F9FF"/>
+                <item android:offset="1.0" android:color="#FFE0F2FE"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Decorative Soft Rings -->
+    <path
+        android:pathData="M120,28C69.19,28 28,69.19 28,120C28,170.81 69.19,212 120,212C170.81,212 212,170.81 212,120C212,69.19 170.81,28 120,28Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#BAE6FD"
+        android:strokeAlpha="0.6"/>
+
+    <!-- Camera Viewfinder Target Brackets [ ] -->
+    <path
+        android:pathData="M48,54H36V66M204,54H192V66M48,186H36V174M204,186H192V174"
+        android:strokeWidth="3.5"
+        android:strokeColor="#0284C7"
+        android:strokeLineCap="round"/>
+
+    <!-- Document / Medicine Label Card in Background -->
+    <path
+        android:pathData="M52,50C52,43.37 57.37,38 64,38H156C162.63,38 168,43.37 168,50V166C168,172.63 162.63,178 156,178H64C57.37,178 52,172.63 52,166Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="110"
+                android:startY="38"
+                android:endX="110"
+                android:endY="178"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFFFF"/>
+                <item android:offset="1.0" android:color="#FFF8FAFC"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M52,50C52,43.37 57.37,38 64,38H156C162.63,38 168,43.37 168,50V166C168,172.63 162.63,178 156,178H64C57.37,178 52,172.63 52,166Z"
+        android:strokeWidth="1.8"
+        android:strokeColor="#CBD5E1"/>
+
+    <!-- Document Header / Cross symbol (Medicine / Prescription) -->
+    <path
+        android:pathData="M66,54H76M71,49V59"
+        android:strokeWidth="3"
+        android:strokeColor="#EF4444"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M84,54H148"
+        android:strokeWidth="4"
+        android:strokeColor="#64748B"
+        android:strokeLineCap="round"/>
+
+    <!-- Unmagnified Tiny text lines on document (before magnifying) -->
+    <path
+        android:pathData="M66,70H150M66,80H136M66,90H142M66,100H126M66,140H146M66,150H130M66,160H110"
+        android:strokeWidth="2.5"
+        android:strokeColor="#CBD5E1"
+        android:strokeLineCap="round"/>
+
+    <!-- Floating Camera Mode Indicator Top Right -->
+    <path
+        android:pathData="M166,42C166,35.37 171.37,30 178,30H204C210.63,30 216,35.37 216,42C216,48.63 210.63,54 204,54H178C171.37,54 166,48.63 166,42Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="166"
+                android:startY="30"
+                android:endX="216"
+                android:endY="54"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF0EA5E9"/>
+                <item android:offset="1.0" android:color="#FF0284C7"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Camera icon inside pill -->
+    <path
+        android:pathData="M185,46H197C198.1,46 199,45.1 199,44V40C199,38.9 198.1,38 197,38H194.5L193.5,36.5H188.5L187.5,38H185C183.9,38 183,38.9 183,40V44C183,45.1 183.9,46 185,46ZM191,39.5C192.4,39.5 193.5,40.6 193.5,42C193.5,43.4 192.4,44.5 191,44.5C189.6,44.5 188.5,43.4 188.5,42C188.5,40.6 189.6,39.5 191,39.5Z"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- MAGNIFYING GLASS HANDLE (Heavy 3D angled handle) -->
+    <!-- Handle Shadow -->
+    <path
+        android:pathData="M152,142L198,188C202.4,192.4 202.4,199.6 198,204C193.6,208.4 186.4,208.4 182,204L136,158Z"
+        android:fillColor="#1E293B"/>
+    <!-- Handle Gradient Body -->
+    <path
+        android:pathData="M150,140L196,186C200.4,190.4 200.4,197.6 196,202C191.6,206.4 184.4,206.4 180,202L134,156Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="134"
+                android:startY="156"
+                android:endX="200"
+                android:endY="202"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF475569"/>
+                <item android:offset="0.5" android:color="#FF334155"/>
+                <item android:offset="1.0" android:color="#FF1E293B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Handle Accent Ring -->
+    <path
+        android:pathData="M141,147L149,155L145,159L137,151Z"
+        android:fillColor="#F59E0B"/>
+
+    <!-- MAGNIFYING LENS OUTER RIM (Metallic Chrome / Indigo Gradient) -->
+    <path
+        android:pathData="M110,48C74.65,48 46,76.65 46,112C46,147.35 74.65,176 110,176C145.35,176 174,147.35 174,112C174,76.65 145.35,48 110,48Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="46"
+                android:startY="48"
+                android:endX="174"
+                android:endY="176"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF38BDF8"/>
+                <item android:offset="0.4" android:color="#FF0284C7"/>
+                <item android:offset="1.0" android:color="#FF0369A1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Glass Bed -->
+    <path
+        android:pathData="M110,56C79.07,56 54,81.07 54,112C54,142.93 79.07,168 110,168C140.93,168 166,142.93 166,112C166,81.07 140.93,56 110,56Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="110"
+                android:startY="56"
+                android:endX="110"
+                android:endY="168"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF0F9FF"/>
+                <item android:offset="0.5" android:color="#FFE0F2FE"/>
+                <item android:offset="1.0" android:color="#FFBAE6FD"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- MAGNIFIED CONTENT UNDER THE LENS (Crystal Clear, Large, Bold!) -->
+    <!-- Magnified Big Letter "A" & Clear Text Lines -->
+    <path
+        android:pathData="M88,88L76,124H84L86.6,116H95.4L98,124H106L94,88H88ZM88.8,110L91,102L93.2,110H88.8Z"
+        android:fillColor="#0369A1"/>
+
+    <!-- Magnified Large Bold Lines -->
+    <path
+        android:pathData="M112,94H144"
+        android:strokeWidth="6"
+        android:strokeColor="#0F172A"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M112,108H140"
+        android:strokeWidth="5"
+        android:strokeColor="#0369A1"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M78,136H142"
+        android:strokeWidth="5"
+        android:strokeColor="#0F172A"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M78,148H126"
+        android:strokeWidth="4.5"
+        android:strokeColor="#334155"
+        android:strokeLineCap="round"/>
+
+    <!-- Glass Reflection Sheen / Arc -->
+    <path
+        android:pathData="M64,98C68,80 84,66 104,62C101,66 88,78 84,98C82,108 81,114 74,116C70,116 63,110 64,98Z"
+        android:fillColor="#80FFFFFF"/>
+    <!-- Small bright reflection dot -->
+    <path
+        android:pathData="M142,76C142,73.8 143.8,72 146,72C148.2,72 150,73.8 150,76C150,78.2 148.2,80 146,80C143.8,80 142,78.2 142,76Z"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Sparkles of Clarity -->
+    <path
+        android:pathData="M34,106C34,109.31 31.31,112 28,112C31.31,112 34,114.69 34,118C34,114.69 36.69,112 40,112C36.69,112 34,109.31 34,106Z"
+        android:fillColor="#38BDF8"/>
+    <path
+        android:pathData="M188,96C188,99.87 184.87,103 181,103C184.87,103 188,106.13 188,110C188,106.13 191.13,103 195,103C191.13,103 188,99.87 188,96Z"
+        android:fillColor="#FBBF24"/>
+    <path
+        android:pathData="M110,24C110,26.76 107.76,29 105,29C107.76,29 110,31.24 110,34C110,31.24 112.24,29 115,29C112.24,29 110,26.76 110,24Z"
+        android:fillColor="#38BDF8"/>
+
+</vector>
