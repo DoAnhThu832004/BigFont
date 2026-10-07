@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.thupo.bigfont.presentation.navigation.AppNavHost
 import com.thupo.bigfont.ui.theme.BigfontTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -21,7 +23,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             BigfontTheme {
-
+                val navController = rememberNavController()
+                AppNavHost(navController = navController)
             }
         }
     }
