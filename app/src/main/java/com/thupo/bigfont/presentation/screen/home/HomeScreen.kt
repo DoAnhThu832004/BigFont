@@ -45,8 +45,6 @@ fun HomeScreen(
     val context = LocalContext.current
     val uiState by viewModel.uiState.collectAsState()
     val lifecycleOwner = LocalLifecycleOwner.current
-
-    // Tự động reload khi người dùng quay lại từ màn hình cài đặt hệ thống
     DisposableEffect(lifecycleOwner) {
         val observer = LifecycleEventObserver { _, event ->
             if (event == Lifecycle.Event.ON_RESUME) {
@@ -56,8 +54,6 @@ fun HomeScreen(
         lifecycleOwner.lifecycle.addObserver(observer)
         onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
     }
-
-    // Lắng nghe một lần các hiệu ứng (Effects)
     LaunchedEffect(viewModel.effectFlow) {
         viewModel.effectFlow.collectLatest { effect ->
             when (effect) {
@@ -76,7 +72,6 @@ fun HomeScreen(
         }
     }
 
-    // Khóa fontScale của UI App ở mức 1.0f để app không bao giờ bị vỡ layout
     val currentDensity = LocalDensity.current
     CompositionLocalProvider(
         LocalDensity provides Density(

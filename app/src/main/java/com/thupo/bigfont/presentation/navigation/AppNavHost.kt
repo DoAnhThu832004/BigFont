@@ -5,6 +5,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.thupo.bigfont.presentation.screen.custom.CustomSizeScreen
 import com.thupo.bigfont.presentation.screen.home.HomeScreen
 import com.thupo.bigfont.presentation.screen.intro.IntroScreen
 import com.thupo.bigfont.presentation.screen.splash.SplashScreen
@@ -36,7 +37,16 @@ fun AppNavHost(navController: NavHostController) {
             )
         }
         composable(Screen.Home.route) {
-            HomeScreen()
+            HomeScreen(
+                onNavigateToCustomSize = {
+                    navController.navigate(Screen.CustomSize.route)
+                }
+            )
+        }
+        composable(Screen.CustomSize.route) {
+            CustomSizeScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
         }
     }
 }
