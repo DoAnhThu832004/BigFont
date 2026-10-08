@@ -9,6 +9,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 import javax.inject.Singleton
+import com.thupo.bigfont.presentation.widget.FontScaleWidget
+import com.thupo.bigfont.domain.util.FontScaleHelper
+import androidx.glance.appwidget.updateAll
 import android.provider.Settings
 
 @Singleton
@@ -39,7 +42,7 @@ class FontScaleRepositoryImpl @Inject constructor(
     }
 
     override fun getCurrentSystemScale(): Float {
-        return context.resources.configuration.fontScale
+        return FontScaleHelper.getCurrentFontScale(context)
     }
 
     override fun hasWriteSettingsPermission(): Boolean {
@@ -50,7 +53,7 @@ class FontScaleRepositoryImpl @Inject constructor(
         }
     }
 
-    override suspend fun applyFontScale(scale: Float): Result<Unit> = runCatching{
+    override suspend fun applyFontScale(scale: Float): Result<Unit> = runCatching {
         if (!hasWriteSettingsPermission()) {
             throw SecurityException("WRITE_SETTINGS permission is not granted")
         }
@@ -59,5 +62,10 @@ class FontScaleRepositoryImpl @Inject constructor(
             Settings.System.FONT_SCALE,
             scale
         )
+        FontScaleHelper.saveFontScale(context, scale)
+        try {
+            FontScaleWidget.updateAllWidgets(context, scale)
+        } catch (_: Exception) {
+        }
     }
 }
