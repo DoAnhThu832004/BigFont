@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.thupo.bigfont.domain.model.FontScaleItem
 import com.thupo.bigfont.domain.usecase.ApplyFontScaleUseCase
 import com.thupo.bigfont.domain.usecase.CheckWritePermissionUseCase
+import com.thupo.bigfont.domain.usecase.DeleteCustomFontUseCase
 import com.thupo.bigfont.domain.usecase.GetFontScalesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
@@ -16,7 +17,8 @@ import javax.inject.Inject
 class HomeViewModel @Inject constructor(
     private val getFontScalesUseCase: GetFontScalesUseCase,
     private val applyFontScaleUseCase: ApplyFontScaleUseCase,
-    private val checkWritePermissionUseCase: CheckWritePermissionUseCase
+    private val checkWritePermissionUseCase: CheckWritePermissionUseCase,
+    private val deleteCustomFontUseCase: DeleteCustomFontUseCase
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(HomeUiState())
@@ -33,6 +35,7 @@ class HomeViewModel @Inject constructor(
         when (event) {
             is HomeUiEvent.RefreshData -> loadFontScales()
             is HomeUiEvent.OnSelectScale -> handleSelectScale(event.item)
+            is HomeUiEvent.OnDeleteCustomScale -> handleDeleteCustomScale(event.item)
             is HomeUiEvent.OnDismissPermissionDialog -> {
                 _uiState.update { it.copy(showPermissionDialog = false, pendingScaleItem = null) }
             }
@@ -56,6 +59,18 @@ class HomeViewModel @Inject constructor(
             getFontScalesUseCase().collect { items ->
                 _uiState.update { it.copy(fontScales = items) }
             }
+        }
+    }
+
+    private fun handleDeleteCustomScale(item: FontScaleItem) {
+        viewModelScope.launch {
+            deleteCustomFontUseCase(item.id)
+                .onSuccess {
+                    _effectChannel.send(HomeUiEffect.ShowToast("Đã xóa cỡ chữ ${item.title}"))
+                }
+                .onFailure {
+                    _effectChannel.send(HomeUiEffect.ShowToast("Không thể xóa: ${it.message}"))
+                }
         }
     }
 

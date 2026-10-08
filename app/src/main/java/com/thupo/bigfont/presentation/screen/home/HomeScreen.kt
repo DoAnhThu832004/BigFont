@@ -125,7 +125,10 @@ fun HomeScreen(
                 items(uiState.fontScales, key = { it.id }) { item ->
                     FontScaleCard(
                         item = item,
-                        onSelect = { viewModel.onEvent(HomeUiEvent.OnSelectScale(item)) }
+                        onSelect = { viewModel.onEvent(HomeUiEvent.OnSelectScale(item)) },
+                        onDelete = if (item.isCustom) {
+                            { viewModel.onEvent(HomeUiEvent.OnDeleteCustomScale(item)) }
+                        } else null
                     )
                 }
 

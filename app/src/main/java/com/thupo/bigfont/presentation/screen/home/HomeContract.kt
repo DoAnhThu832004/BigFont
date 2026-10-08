@@ -13,6 +13,7 @@ data class HomeUiState(
 sealed interface HomeUiEvent {
     data object RefreshData : HomeUiEvent
     data class OnSelectScale(val item: FontScaleItem) : HomeUiEvent
+    data class OnDeleteCustomScale(val item: FontScaleItem) : HomeUiEvent
     data object OnDismissPermissionDialog : HomeUiEvent
     data object OnConfirmRequestPermission : HomeUiEvent
     data object OnClickCustomSize : HomeUiEvent
